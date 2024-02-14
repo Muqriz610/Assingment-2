@@ -1,0 +1,44 @@
+<!-- page3.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MULAH - Page 3</title>
+    <style>
+        /* Your styling here */
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <h1 id="mulah-text">MULAH</h1>
+    </div>
+
+    <div id="content">
+        <div id="data-section">
+            <p class="data-label">Phone Number:</p>
+            <p class="data-value"><?php echo $_GET['phone']; ?></p>
+
+            <p class="data-label">Name:</p>
+            <p class="data-value"><?php echo $_GET['name']; ?></p>
+
+            <p class="data-label">Email:</p>
+            <p class="data-value"><?php echo $_GET['email']; ?></p>
+
+            <p class="data-label">Birthday:</p>
+            <p class="data-value">
+                <?php
+                    $day = $_GET['day'] ?? '';
+                    $month = $_GET['month'] ?? '';
+                    $year = $_GET['year'] ?? '';
+                    echo $day . '/' . $month . '/' . $year;
+                ?>
+            </p>
+        </div>
+    </div>
+
+    <a href="index.html" class="orange-button">Back to Home</a>
+
+</body>
+</html>

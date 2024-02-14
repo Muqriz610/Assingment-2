@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #FFA500; /* Set text color to orange */
+            width: 640px;
+            height: 1136px;
+            box-sizing: border-box;
+        }
+
+        #header {
+            background-color: #ffffff; /* Set background color to white */
+            text-align: center;
+            padding: 20px;
+        }
+
+        #content {
+            text-align: left; /* Align content to the left */
+            padding: 20px;
+        }
+
+        #mulah-text {
+            color: #FFA500; /* Set text color to orange (MULAH color) */
+            text-align: center;
+            font-size: 24px; /* You can modify the size */
+        }
+
+        #registration-text {
+            font-size: 50px; /* You can modify the size */
+            margin-top: 10px; /* Add margin above the registration text */
+            color: #808080; /* Set text color to grey */
+        }
+
+        #details-text {
+            font-family: Arial, sans-serif; /* Set font to Arial */
+            font-size: 12px; /* Set font size to 12px */
+            font-style: italic; /* Set text style to italic */
+            color: #808080; /* Set text color to grey */
+            margin-top: 5px; /* Reduce margin between texts */
+        }
+
+        #name-label,
+        #birthday-label,
+        #email-label {
+            font-family: Arial, sans-serif; /* Set font to Arial */
+            font-size: 18px; /* You can modify the size */
+            margin-top: 20px; /* Add margin above the label */
+            color: #808080; /* Set text color to grey */
+        }
+
+        #name-input,
+        #birthday-input,
+        #email-input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        .birthday-space {
+            width: 30px;
+            margin-right: 5px; /* Adjusted margin between DD, MM, and YY */
+        }
+
+        .year-space {
+            width: 50px; /* Increased width for the year placeholder */
+            margin-right: 5px; /* Adjusted margin between MM and YY */
+        }
+
+        #birthday-hint,
+        #name-hint,
+        #email-hint {
+            font-size: 12px; /* Set font size to 12px */
+            font-style: italic; /* Set text style to italic */
+            color: red; /* Set text color to red */
+            margin-top: 5px;
+        }
+
+        #no-email-label {
+            font-family: Arial, sans-serif; /* Set font to Arial */
+            font-size: 14px; /* You can modify the size */
+            margin-top: 20px; /* Add margin above the label */
+            color: #808080; /* Set text color to grey */
+        }
+
+        #no-email-checkbox {
+            margin-top: 5px;
+        }
+
+        .orange-button {
+            display: block;
+            margin: 20px auto; /* Center the button */
+            background-color: #FFA500; /* Set orange background color */
+            color: #ffffff; /* Set text color to white */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px; /* Set rounded corners */
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <h1 id="mulah-text">MULAH</h1>
+    </div>
+
+    
+    <div id="content">
+        <p id="registration-text">Registration</p>
+        <p id="details-text">Please fill up your details</p>
+
+        <form action="page3.html" method="get">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name-input" name="name" placeholder="Enter Name">
+            <p id="name-hint">*Please insert your name</p>
+
+            <label for="birthday" id="birthday-label">Birthday</label>
+            <div id="birthday-input">
+                <input type="text" class="birthday-space" name="day" placeholder="DD">
+                <input type="text" class="birthday-space" name="month" placeholder="MM">
+                <input type="text" class="year-space" name="year" placeholder="YY">
+            </div>
+            <p id="birthday-hint">*Please insert your birthday</p>
+
+            <label for="email" id="email-label">Email</label>
+            <input type="text" id="email-input" name="email" placeholder="Email Address">
+            <p id="email-hint">*Please insert a valid email address</p>
+
+            <label for="no-email" id="no-email-label">No email address</label>
+            <input type="checkbox" id="no-email-checkbox" name="no-email">
+
+            <input type="submit" class="orange-button" value="Continue">
+        </form>
+    </div>
+
+</body>
+</html>
